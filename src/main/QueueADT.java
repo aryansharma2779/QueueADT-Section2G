@@ -10,11 +10,6 @@ public class QueueADT
 
 	void enqueue(int value)
 	{
-     if(!isEmpty())
-	 {
-	 	front++;
-	 	value = queue[front];
-	 }
 	}
 
 	int dequeue()
@@ -35,7 +30,7 @@ public class QueueADT
 	int size()
 	{
 		int size = 0;
-
+		size=rear+1;
 		return size;
 	}
 
