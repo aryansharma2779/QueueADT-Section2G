@@ -10,7 +10,11 @@ public class QueueADT
 
 	void enqueue(int value)
 	{
-
+     if(!isEmpty())
+	 {
+	 	front++;
+	 	value = queue[front];
+	 }
 	}
 
 	int dequeue()
